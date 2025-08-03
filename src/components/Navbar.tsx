@@ -27,7 +27,7 @@ const Navbar = () => {
               <Leaf className="h-6 w-6 text-primary-foreground" />
             </div>
             <span className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
-              HydroNature
+              Garden Essence
             </span>
           </Link>
 
@@ -58,7 +58,11 @@ const Navbar = () => {
               onClick={() => setIsOpen(!isOpen)}
               className="text-foreground hover:bg-muted"
             >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
             </Button>
           </div>
         </div>
