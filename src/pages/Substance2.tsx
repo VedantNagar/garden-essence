@@ -2,7 +2,24 @@ import Navbar from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Droplets, Zap, Shield, CheckCircle, Leaf } from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import {
+  Droplets,
+  Zap,
+  Shield,
+  CheckCircle,
+  Leaf,
+  Info,
+  Beaker,
+  Target,
+  Users,
+} from "lucide-react";
 import veggiesImg from "../../public/images/product/veggies.jpg";
 
 const Substance2 = () => {
@@ -46,6 +63,43 @@ const Substance2 = () => {
     { label: "Shelf Life", value: "3 years" },
   ];
 
+  const detailedInfo = {
+    composition: [
+      "Balanced NPK ratio optimized for fruiting vegetables",
+      "Enhanced Calcium content for strong cell walls and disease resistance",
+      "Secondary nutrients: Magnesium (Mg), Sulfur (S) for protein synthesis",
+      "Complete micronutrient package with chelated Iron, Zinc, Manganese",
+      "Boron and Molybdenum for flower and fruit development",
+      "pH stabilizers for consistent nutrient availability",
+    ],
+    usage: [
+      "Prepare stock solutions A and B separately in clean containers",
+      "Add equal amounts of stock A and B to fresh water",
+      "Maintain EC levels: 1200-1800 ppm for mature fruiting plants",
+      "Optimal pH range: 5.8-6.2 for maximum nutrient uptake",
+      "Monitor and replace solution every 2-3 weeks",
+      "Increase concentration during flowering and fruiting stages",
+    ],
+    applications: [
+      "Commercial greenhouse production",
+      "Vertical farming systems",
+      "Dutch bucket (Bato bucket) systems",
+      "Rockwool slab cultivation",
+      "Coco coir and perlite mix",
+      "Recirculating hydroponic systems",
+      "Drip-to-waste systems",
+    ],
+    crops: [
+      "Tomatoes (all varieties - cherry, beefsteak, heirloom)",
+      "Cucumbers and zucchini",
+      "Bell peppers and chili peppers",
+      "Eggplant and okra",
+      "Melons and watermelons",
+      "Flowering plants and ornamentals",
+      "Strawberries and berry crops",
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
@@ -86,9 +140,132 @@ const Substance2 = () => {
               <Button variant="earth" size="lg" className="flex-1">
                 Order Now
               </Button>
-              <Button variant="outline" size="lg" className="flex-1">
-                Download Guide
-              </Button>
+              <Dialog>
+                <DialogTrigger asChild>
+                  <Button variant="outline" size="lg" className="flex-1">
+                    <Info className="mr-2 h-4 w-4" />
+                    Learn More
+                  </Button>
+                </DialogTrigger>
+                <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto">
+                  <DialogHeader>
+                    <DialogTitle className="text-2xl font-bold text-center mb-4">
+                      Complete Product Information - Veggies Formula
+                    </DialogTitle>
+                  </DialogHeader>
+
+                  <div className="space-y-6">
+                    {/* Composition Section */}
+                    <div className="space-y-3">
+                      <div className="flex items-center space-x-2">
+                        <Beaker className="h-5 w-5 text-accent" />
+                        <h3 className="text-lg font-semibold">
+                          Nutrient Composition
+                        </h3>
+                      </div>
+                      <ul className="space-y-2 ml-7">
+                        {detailedInfo.composition.map((item, index) => (
+                          <li
+                            key={index}
+                            className="flex items-start space-x-2"
+                          >
+                            <CheckCircle className="h-4 w-4 text-accent mt-0.5 flex-shrink-0" />
+                            <span className="text-sm text-muted-foreground">
+                              {item}
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    {/* Usage Instructions */}
+                    <div className="space-y-3">
+                      <div className="flex items-center space-x-2">
+                        <Target className="h-5 w-5 text-accent" />
+                        <h3 className="text-lg font-semibold">
+                          Usage Instructions
+                        </h3>
+                      </div>
+                      <ul className="space-y-2 ml-7">
+                        {detailedInfo.usage.map((item, index) => (
+                          <li
+                            key={index}
+                            className="flex items-start space-x-2"
+                          >
+                            <CheckCircle className="h-4 w-4 text-accent mt-0.5 flex-shrink-0" />
+                            <span className="text-sm text-muted-foreground">
+                              {item}
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    {/* Applications */}
+                    <div className="space-y-3">
+                      <div className="flex items-center space-x-2">
+                        <Droplets className="h-5 w-5 text-accent" />
+                        <h3 className="text-lg font-semibold">
+                          System Compatibility
+                        </h3>
+                      </div>
+                      <ul className="space-y-2 ml-7">
+                        {detailedInfo.applications.map((item, index) => (
+                          <li
+                            key={index}
+                            className="flex items-start space-x-2"
+                          >
+                            <CheckCircle className="h-4 w-4 text-accent mt-0.5 flex-shrink-0" />
+                            <span className="text-sm text-muted-foreground">
+                              {item}
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    {/* Suitable Crops */}
+                    <div className="space-y-3">
+                      <div className="flex items-center space-x-2">
+                        <Leaf className="h-5 w-5 text-accent" />
+                        <h3 className="text-lg font-semibold">
+                          Suitable Crops
+                        </h3>
+                      </div>
+                      <ul className="space-y-2 ml-7">
+                        {detailedInfo.crops.map((item, index) => (
+                          <li
+                            key={index}
+                            className="flex items-start space-x-2"
+                          >
+                            <CheckCircle className="h-4 w-4 text-accent mt-0.5 flex-shrink-0" />
+                            <span className="text-sm text-muted-foreground">
+                              {item}
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    {/* Call to Action */}
+                    <div className="bg-gradient-earth rounded-lg p-6 text-center text-primary-foreground mt-6">
+                      <h4 className="text-lg font-semibold mb-2">
+                        Perfect for Your Vegetable Garden
+                      </h4>
+                      <p className="text-sm opacity-90 mb-4">
+                        Achieve commercial-grade results with our specialized
+                        vegetable formula
+                      </p>
+                      <Button
+                        variant="secondary"
+                        className="bg-primary-foreground text-primary hover:scale-105 transition-transform"
+                      >
+                        Order Now
+                      </Button>
+                    </div>
+                  </div>
+                </DialogContent>
+              </Dialog>
             </div>
           </div>
 

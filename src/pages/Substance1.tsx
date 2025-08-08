@@ -2,7 +2,24 @@ import Navbar from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Droplets, Zap, Shield, CheckCircle, Leaf } from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import {
+  Droplets,
+  Zap,
+  Shield,
+  CheckCircle,
+  Leaf,
+  Info,
+  Beaker,
+  Target,
+  Users,
+} from "lucide-react";
 import leafyGreenImg from "../../public/images/product/leafy-green.jpg";
 
 const Substance1 = () => {
@@ -41,6 +58,39 @@ const Substance1 = () => {
     { label: "Dilution", value: "Makes up to 250L nutrient solution" },
     { label: "Shelf Life", value: "3 years" },
   ];
+
+  const detailedInfo = {
+    composition: [
+      "Primary Macronutrients: Nitrogen (N), Phosphorus (P), Potassium (K)",
+      "Secondary Nutrients: Calcium (Ca), Magnesium (Mg), Sulfur (S)",
+      "Micronutrients: Iron (Fe), Manganese (Mn), Zinc (Zn), Copper (Cu), Boron (B), Molybdenum (Mo)",
+      "Chelated minerals for maximum absorption",
+      "pH buffering agents for stability",
+    ],
+    usage: [
+      "Mix Part A and Part B separately with water as per instructions",
+      "Never mix concentrated solutions directly together",
+      "Maintain pH between 5.5-6.5 for optimal nutrient uptake",
+      "EC/TDS levels: 800-1200 ppm for mature plants",
+      "Change solution every 2-3 weeks or when EC drops below 600 ppm",
+    ],
+    applications: [
+      "Deep Water Culture (DWC) systems",
+      "Nutrient Film Technique (NFT)",
+      "Ebb and flow (flood and drain)",
+      "Drip irrigation systems",
+      "Coco coir and perlite mediums",
+      "Rockwool growing systems",
+    ],
+    crops: [
+      "Lettuce (all varieties)",
+      "Spinach and Asian greens",
+      "Herbs: Basil, Cilantro, Parsley, Mint",
+      "Kale and Swiss chard",
+      "Arugula and watercress",
+      "Microgreens production",
+    ],
+  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -82,9 +132,132 @@ const Substance1 = () => {
               <Button variant="nature" size="lg" className="flex-1">
                 Order Now
               </Button>
-              <Button variant="outline" size="lg" className="flex-1">
-                Download Guide
-              </Button>
+              <Dialog>
+                <DialogTrigger asChild>
+                  <Button variant="nature" size="lg" className="flex-1">
+                    <Info className="mr-2 h-4 w-4" />
+                    Learn More
+                  </Button>
+                </DialogTrigger>
+                <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto">
+                  <DialogHeader>
+                    <DialogTitle className="text-2xl font-bold text-center mb-4">
+                      Complete Product Information
+                    </DialogTitle>
+                  </DialogHeader>
+
+                  <div className="space-y-6">
+                    {/* Composition Section */}
+                    <div className="space-y-3">
+                      <div className="flex items-center space-x-2">
+                        <Beaker className="h-5 w-5 text-accent" />
+                        <h3 className="text-lg font-semibold">
+                          Nutrient Composition
+                        </h3>
+                      </div>
+                      <ul className="space-y-2 ml-7">
+                        {detailedInfo.composition.map((item, index) => (
+                          <li
+                            key={index}
+                            className="flex items-start space-x-2"
+                          >
+                            <CheckCircle className="h-4 w-4 text-accent mt-0.5 flex-shrink-0" />
+                            <span className="text-sm text-muted-foreground">
+                              {item}
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    {/* Usage Instructions */}
+                    <div className="space-y-3">
+                      <div className="flex items-center space-x-2">
+                        <Target className="h-5 w-5 text-accent" />
+                        <h3 className="text-lg font-semibold">
+                          Usage Instructions
+                        </h3>
+                      </div>
+                      <ul className="space-y-2 ml-7">
+                        {detailedInfo.usage.map((item, index) => (
+                          <li
+                            key={index}
+                            className="flex items-start space-x-2"
+                          >
+                            <CheckCircle className="h-4 w-4 text-accent mt-0.5 flex-shrink-0" />
+                            <span className="text-sm text-muted-foreground">
+                              {item}
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    {/* Applications */}
+                    <div className="space-y-3">
+                      <div className="flex items-center space-x-2">
+                        <Droplets className="h-5 w-5 text-accent" />
+                        <h3 className="text-lg font-semibold">
+                          System Compatibility
+                        </h3>
+                      </div>
+                      <ul className="space-y-2 ml-7">
+                        {detailedInfo.applications.map((item, index) => (
+                          <li
+                            key={index}
+                            className="flex items-start space-x-2"
+                          >
+                            <CheckCircle className="h-4 w-4 text-accent mt-0.5 flex-shrink-0" />
+                            <span className="text-sm text-muted-foreground">
+                              {item}
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    {/* Suitable Crops */}
+                    <div className="space-y-3">
+                      <div className="flex items-center space-x-2">
+                        <Leaf className="h-5 w-5 text-accent" />
+                        <h3 className="text-lg font-semibold">
+                          Suitable Crops
+                        </h3>
+                      </div>
+                      <ul className="space-y-2 ml-7">
+                        {detailedInfo.crops.map((item, index) => (
+                          <li
+                            key={index}
+                            className="flex items-start space-x-2"
+                          >
+                            <CheckCircle className="h-4 w-4 text-accent mt-0.5 flex-shrink-0" />
+                            <span className="text-sm text-muted-foreground">
+                              {item}
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    {/* Call to Action */}
+                    <div className="bg-gradient-nature rounded-lg p-6 text-center text-primary-foreground mt-6">
+                      <h4 className="text-lg font-semibold mb-2">
+                        Ready to Start Growing?
+                      </h4>
+                      <p className="text-sm opacity-90 mb-4">
+                        Get professional results with our scientifically
+                        formulated nutrients
+                      </p>
+                      <Button
+                        variant="secondary"
+                        className="bg-primary-foreground text-primary hover:scale-105 transition-transform"
+                      >
+                        Order Now
+                      </Button>
+                    </div>
+                  </div>
+                </DialogContent>
+              </Dialog>
             </div>
           </div>
 
