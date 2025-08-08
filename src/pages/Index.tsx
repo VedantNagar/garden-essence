@@ -3,8 +3,8 @@ import ProductCard from "@/components/ProductCard";
 import { Button } from "@/components/ui/button";
 import { Leaf, Droplets, Shield } from "lucide-react";
 import heroImage from "@/assets/hero-hydroponic.jpg";
-import substance1Image from "@/assets/substance1.jpg";
-import substance2Image from "@/assets/substance2.jpg";
+import substance1Image from "../../public/images/product/leafAll.jpg";
+import substance2Image from "../../public/images/product/vegAll.jpg";
 
 const Index = () => {
   const products = [
@@ -168,7 +168,7 @@ const Index = () => {
             <Button
               variant="outline"
               size="lg"
-              className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+              className="bg-primary-foreground text-primary hover:scale-105 transition-transform duration-300 shadow-earth"
             >
               Contact Us
             </Button>
