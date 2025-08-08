@@ -142,7 +142,7 @@ const Substance2 = () => {
               </Button>
               <Dialog>
                 <DialogTrigger asChild>
-                  <Button variant="outline" size="lg" className="flex-1">
+                  <Button variant="earth" size="lg" className="flex-1">
                     <Info className="mr-2 h-4 w-4" />
                     Learn More
                   </Button>
