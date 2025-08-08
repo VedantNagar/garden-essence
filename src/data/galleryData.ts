@@ -56,18 +56,18 @@ export const videos: VideoData[] = [
   },
   {
     id: "2",
-    title: "Growth Formula vs Traditional Nutrients",
+    title: "Leafy Greens - 250 vs Traditional Nutrients",
     description:
-      "See the amazing results when comparing our Growth Formula with traditional growing methods.",
+      "See the amazing results when comparing our Leafy Greens - 250 with traditional growing methods.",
     thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
     duration: "8:45",
     category: "Comparison",
   },
   {
     id: "3",
-    title: "Root Booster Success Stories",
+    title: "Veggies – 200 Success Stories",
     description:
-      "Real customers share their incredible results using our Advanced Root Booster formula.",
+      "Real customers share their incredible results using our Advanced Veggies – 200 formula.",
     thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
     duration: "12:15",
     category: "Testimonials",

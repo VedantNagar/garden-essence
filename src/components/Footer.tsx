@@ -59,7 +59,7 @@ const Footer = () => {
                   to="/substance1"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  Growth Formula
+                  Leafy Greens - 250
                 </Link>
               </li>
               <li>
@@ -67,7 +67,7 @@ const Footer = () => {
                   to="/substance2"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  Root Booster
+                  Veggies – 200
                 </Link>
               </li>
               <li>

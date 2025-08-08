@@ -9,7 +9,7 @@ import substance2Image from "@/assets/substance2.jpg";
 const Index = () => {
   const products = [
     {
-      title: "Growth Formula",
+      title: "Leafy Greens - 250",
       description:
         "Our premium nutrient solution designed to maximize vegetative growth and overall plant health. Perfect for all stages of plant development.",
       image: substance1Image,
@@ -22,7 +22,7 @@ const Index = () => {
       ],
     },
     {
-      title: "Root Booster",
+      title: "Veggies – 200",
       description:
         "Advanced root development formula that creates the foundation for exceptional plant growth. Enhance your plants' ability to absorb nutrients.",
       image: substance2Image,

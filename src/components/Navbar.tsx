@@ -10,8 +10,8 @@ const Navbar = () => {
   const navigation = [
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
-    { name: "Growth Formula", href: "/substance1" },
-    { name: "Root Booster", href: "/substance2" },
+    { name: "Leafy Greens - 250", href: "/substance1" },
+    { name: "Veggies – 200", href: "/substance2" },
     { name: "Gallery", href: "/gallery" },
   ];
 
