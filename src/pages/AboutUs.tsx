@@ -3,7 +3,7 @@ import {
   heroContent,
   storyContent,
   // missionContent,
-} from "@/content/aboutUsContent";
+} from "@/content/AboutUsContent";
 
 const AboutUs = () => {
   return (
