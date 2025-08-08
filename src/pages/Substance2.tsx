@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Droplets, Zap, Shield, CheckCircle, Leaf } from "lucide-react";
-import substance2Image from "@/assets/substance2.jpg";
+import veggiesImg from "../../public/images/product/veggies.jpg";
 
 const Substance2 = () => {
   const features = [
@@ -95,7 +95,7 @@ const Substance2 = () => {
           <div className="relative">
             <div className="bg-gradient-to-br from-muted to-card rounded-lg p-8 shadow-earth">
               <img
-                src={substance2Image}
+                src={veggiesImg}
                 alt="Veggies Nutrient"
                 className="w-full max-w-md mx-auto rounded-lg shadow-forest hover:scale-105 transition-transform duration-500"
               />
