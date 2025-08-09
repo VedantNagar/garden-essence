@@ -38,8 +38,8 @@ const AboutUs = () => {
           {/* Image 1 */}
           <div className="group relative overflow-hidden rounded-lg bg-card hover:shadow-forest transition-all duration-300 hover:-translate-y-1">
             <img
-              src="/images/product/green.jpg"
-              alt="Hydroponic setup"
+              src="/images/product/leafAll.jpg"
+              alt="Leafy Greens-250"
               className="w-full h-72 md:h-96 object-cover rounded-lg"
             />
           </div>
@@ -47,8 +47,8 @@ const AboutUs = () => {
           {/* Image 2 */}
           <div className="group relative overflow-hidden rounded-lg bg-card hover:shadow-forest transition-all duration-300 hover:-translate-y-1">
             <img
-              src="/images/product/veg.jpg"
-              alt="Lush green produce"
+              src="/images/product/vegAll.jpg"
+              alt="Veggies-200"
               className="w-full h-72 md:h-96 object-cover rounded-lg"
             />
           </div>

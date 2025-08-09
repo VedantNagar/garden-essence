@@ -3,8 +3,8 @@ import ProductCard from "@/components/ProductCard";
 import { Button } from "@/components/ui/button";
 import { Leaf, Droplets, Shield } from "lucide-react";
 import heroImage from "@/assets/hero-hydroponic.jpg";
-import substance1Image from "../../public/images/product/leafAll.jpg";
-import substance2Image from "../../public/images/product/vegAll.jpg";
+import substance1Image from "../../public//images/product/green.jpg";
+import substance2Image from "../../public/images/product/veg.jpg";
 
 const Index = () => {
   const products = [
