@@ -45,12 +45,12 @@ const Index = () => {
     {
       icon: Droplets,
       title: "Superior Results",
-      description: "Proven to increase yields by up to 40%",
+      description: "Tried and tested on our own home-grown plants ",
     },
     {
       icon: Shield,
       title: "Plant Health",
-      description: "Strengthens plant immunity and disease resistance",
+      description: "Gives remarkable growth and great plant quality",
     },
   ];
 
