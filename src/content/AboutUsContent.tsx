@@ -9,13 +9,38 @@ export const storyContent = {
   ],
 };
 
-export const missionContent = {
-  title: "Our Mission",
-  description:
-    "We strive to empower growers by delivering innovative, research-driven hydroponic nutrients that unlock the full potential of plants while preserving natural resources for generations to come.",
+export const HydroponicContent = {
+  title: "What is Hydroponics' Cultivation?",
+  paragraphs: [
+    "Simply put, hydroponics is a system of growing plants in water and in which direct feeding of plants is done and not of the soil or any other substrate i.e. the nutrients are dissolved in water and are immediately available to the plants through their roots. Therefore, it is necessary to use complete nutrients and not supplement fertilizers.",
+    
+    "We, at Garden Essence are dedicated and committed to provide the growers, both home and commercial, a complete package for your plants and not just supplement fertilizers. Our hydroponic nutrients contain all elements necessary for plant growth and in proper ratio to each other. Composition of the Garden Essence™ Premium Hydroponic Nutrients has been kept in a particular balance to satisfy the plants’ requirements for essential elements. This balance of all major and micro elements ensures that there is neither deficiency nor toxicity of any of these in the plants. As it is commonly known that the quality of ingredients determines the quality of end product, we use premium quality ingredients/salts in manufacturing our hydroponic nutrients.",
+    
+    "To keep plants in their comfort zone, you have to provide adequate amount of essential nutrients,manage the water temperature and ambient temperature, monitor relative humidity, adjust lighting and aeration of the nutrient solution.",
+
+    "The saying - excess of anything is bad- which in hydroponics (and in general farming too) translates to “if a plant responds favourably to a certain dose of nutrients, then giving more dosage of the same will lead to toxicity and finally death of the plant”. Therefore, we have provided detailed dosage plan/chart of our Garden Essence™ Premium Hydroponic Nutrients in the instruction leaflet provided inside the box.",
+
+    "With Garden Essence Premium Hydroponic Nutrients, the possibility of SALT IMBALANCE is ZERO as each ingredient/salt of Garden Essence™ Premium Hydroponic Nutrients is weighed individually, before adding in individual bottles.",
+
+    "Garden Essence™ Premium Hydroponic Nutrients is a clean and 100% water-soluble product that will not clog spray lines, drip emitters and can be used in reservoirs."
+  ]
+};
+export const questionContent = {
+  title: "Important Question",
+  paragraphs: [
+    "1. Different scales for TDS readings are being used around the world. Widely used ppm scales in hydroponics are the ppm500 scale, ppm650 scale and the ppm700 scale. The ppm500 scale is also referred to as TDS - total dissolved solids. The true ppm of a solution can only be determined by a chemical analysis, ppm cannot be measured by an EC meter. ppm Meter measure the EC of the solution and then convert it to a ppm reading as per the above-mentioned scales. If you are sure about the scale of your TDS meter and also if the requiredTDS is of the matching scale, then you can go ahead with the TDS meter and, if not, it is better to use the ECreadings, which is international scale used for measuring Electrical Conductivity (EC).",
+    "2. Ideally, in closed hydroponics systems (like NFT, DWC, Kratky, ebb and flow systems, etc.) theprepared nutrient solution, should be completely replaced with fresh nutrient solution once every 12-15 days,as after such time the readings shown in your EC/TDS meter doesn’t reflect the actual nutrient content of thesolution. These readings may be erroneous with respect to certain elemental EC/ppm as the roots also exudesome organic matter in to the nutrient solution. If you intend to keep on recirculating the same nutrientsolution into your closed hydroponics system, it is advisable to get it tested regularly by any analytical laboratory. But this again is very costly proposition. The used/ spent nutrient solution can be used in your outdoor flower or vegetable garden."
+  ]
 };
 export const heroContent = {
   title: "Welcome to Garden Essence",
   description:
-    "Revolutionizing agriculture with cutting-edge hydroponic nutrients designed for optimal plant growth and sustainability.",
+    "Revolutionizing agriculture with cutting-edge hydroponic nutrients designed for optimal plant growth and sustainability",
+};
+
+export const storeContent = {
+  title: "How to Store Hydroponic Nutrients",
+  paragraphs:[
+    "Store the GARDEN ESSENCE™ PREMIUM HYDROPONICS NUTRIENTS Stock Solution A &amp; B in a cool, dry place and away from direct sunlight. Always wash hands thoroughly with soap after handling the stock solution or the final nutrient solution. Keep out of reach of children and pets. Use as directed. Avoid contact with skin and eyes. If ingested, seek medical help immediately.",
+  ]
 };
