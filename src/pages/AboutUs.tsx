@@ -116,7 +116,7 @@ const AboutUs = () => {
               alt="Garden Essence Leafy Greens Formula"
               className="w-full h-72 md:h-96 object-cover rounded-lg"
             />
-            <div className="absolute bottom-4 left-4 right-4">
+{/*             <div className="absolute bottom-4 left-4 right-4">
               <div className="bg-background/90 backdrop-blur-sm rounded-lg p-3">
                 <h3 className="font-semibold text-foreground">
                   Leafy Greens - 250
@@ -125,7 +125,7 @@ const AboutUs = () => {
                   Perfect for herbs & leafy vegetables
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className="group relative overflow-hidden rounded-lg bg-card hover:shadow-forest transition-all duration-300 hover:-translate-y-1">
@@ -134,14 +134,14 @@ const AboutUs = () => {
               alt="Garden Essence Veggies Formula"
               className="w-full h-72 md:h-96 object-cover rounded-lg"
             />
-            <div className="absolute bottom-4 left-4 right-4">
+{/*             <div className="absolute bottom-4 left-4 right-4">
               <div className="bg-background/90 backdrop-blur-sm rounded-lg p-3">
                 <h3 className="font-semibold text-foreground">Veggies - 200</h3>
                 <p className="text-sm text-muted-foreground">
                   Optimized for fruiting vegetables
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 

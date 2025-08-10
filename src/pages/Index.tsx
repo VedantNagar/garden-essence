@@ -11,28 +11,28 @@ const Index = () => {
     {
       title: "Leafy Greens - 250",
       description:
-        "Our premium nutrient solution designed to maximize vegetative growth and overall plant health. Perfect for all stages of plant development.",
+        "Our premium nutrient solution designed to maximize vegetative growth and overall plant health.",
       image: substance1Image,
       link: "/substance1",
-      features: [
+/*       features: [
         "Essential macro and micronutrients",
         "Balanced NPK ratio for optimal growth",
         "Enhanced with chelated minerals",
         "pH buffered for stability",
-      ],
+      ], */
     },
     {
       title: "Veggies – 200",
       description:
-        "Advanced root development formula that creates the foundation for exceptional plant growth. Enhance your plants' ability to absorb nutrients.",
+        "Complete Nutrition Package for all Vegetables Crops- Tomatoes, Cucumbers, Melons, Chillies, Bell Peppers, Okra, Floral crops, etc.",
       image: substance2Image,
       link: "/substance2",
-      features: [
+/*       features: [
         "Advanced root development complex",
         "Natural growth hormones",
         "Mycorrhizal fungi blend",
         "Amino acid enriched",
-      ],
+      ], */
     },
   ];
 
@@ -140,7 +140,7 @@ const Index = () => {
                 description={product.description}
                 image={product.image}
                 link={product.link}
-                features={product.features}
+                /* features={product.features} */
               />
             ))}
           </div>

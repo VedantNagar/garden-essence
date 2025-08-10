@@ -14,7 +14,7 @@ interface ProductCardProps {
   description: string;
   image: string;
   link: string;
-  features: string[];
+  /* features: string[]; */
 }
 
 const ProductCard = ({
@@ -22,7 +22,7 @@ const ProductCard = ({
   description,
   image,
   link,
-  features,
+  /* features, */
 }: ProductCardProps) => {
   return (
     <Card className="group hover:shadow-forest transition-all duration-300 hover:-translate-y-2 bg-card border-border">
@@ -45,7 +45,7 @@ const ProductCard = ({
           {description}
         </p>
         <ul className="space-y-2">
-          {features.map((feature, index) => (
+{/*           {features.map((feature, index) => (
             <li
               key={index}
               className="flex items-center text-sm text-muted-foreground"
@@ -53,7 +53,7 @@ const ProductCard = ({
               <div className="w-1.5 h-1.5 bg-accent rounded-full mr-3 flex-shrink-0" />
               {feature}
             </li>
-          ))}
+          ))} */}
         </ul>
       </CardContent>
 
