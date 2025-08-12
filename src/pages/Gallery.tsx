@@ -28,7 +28,7 @@ const Gallery = () => {
         </div>
 
         {/* Educational Videos */}
-        <div className="mb-16">
+{/*         <div className="mb-16">
           <h2 className="text-3xl font-bold text-center text-foreground mb-12">
             Educational Videos
           </h2>
@@ -69,7 +69,7 @@ const Gallery = () => {
               </Card>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* My Garden Gallery - Aligned Grid */}
         <div className="mb-16">
