@@ -88,11 +88,11 @@ const Gallery = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-nature opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
 
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+   {/*                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <p className="text-white text-sm font-medium">
                       {image.alt}
                     </p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             ))}

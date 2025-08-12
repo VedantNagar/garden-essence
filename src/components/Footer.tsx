@@ -15,22 +15,21 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-muted-foreground mb-4 max-w-md">
-              Premium hydroponic nutrients for superior plant growth. Trusted by
-              growers worldwide for exceptional results.
+              Premium hydroponic nutrients for superior plant growth.
             </p>
             <div className="flex flex-col gap-2 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4" />
-                <span>info@Garden Essence.com</span>
+                <span>support@gardenessence.co.in</span>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4" />
-                <span>+1 (555) 123-4567</span>
+                <span>+91-9967551104</span>
               </div>
-              <div className="flex items-center gap-2">
+{/*               <div className="flex items-center gap-2">
                 <MapPin className="h-4 w-4" />
                 <span>123 Garden St, Green Valley, CA 90210</span>
-              </div>
+              </div> */}
             </div>
           </div>
 
