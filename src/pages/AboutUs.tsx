@@ -7,7 +7,23 @@ import {
 } from "@/components/ui/accordion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Leaf, Target, Heart, FileQuestion, Package } from "lucide-react";
+import {
+  Leaf,
+  Target,
+  Heart,
+  FileQuestion,
+  Package,
+  Phone,
+  Mail,
+} from "lucide-react";
+import {
+  Dialog,
+  DialogTrigger,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+} from "@/components/ui/dialog";
 import {
   heroContent,
   storyContent,
@@ -116,7 +132,7 @@ const AboutUs = () => {
               alt="Garden Essence Leafy Greens Formula"
               className="w-full h-72 md:h-96 object-cover rounded-lg"
             />
-{/*             <div className="absolute bottom-4 left-4 right-4">
+            {/*             <div className="absolute bottom-4 left-4 right-4">
               <div className="bg-background/90 backdrop-blur-sm rounded-lg p-3">
                 <h3 className="font-semibold text-foreground">
                   Leafy Greens - 250
@@ -134,7 +150,7 @@ const AboutUs = () => {
               alt="Garden Essence Veggies Formula"
               className="w-full h-72 md:h-96 object-cover rounded-lg"
             />
-{/*             <div className="absolute bottom-4 left-4 right-4">
+            {/*             <div className="absolute bottom-4 left-4 right-4">
               <div className="bg-background/90 backdrop-blur-sm rounded-lg p-3">
                 <h3 className="font-semibold text-foreground">Veggies - 200</h3>
                 <p className="text-sm text-muted-foreground">
@@ -157,9 +173,30 @@ const AboutUs = () => {
             <button className="bg-primary-foreground text-primary px-6 py-3 rounded-md font-semibold hover:scale-105 transition-transform duration-300 shadow-earth">
               Shop Products
             </button>
-            <button className="border border-primary-foreground text-primary-foreground px-6 py-3 rounded-md font-semibold hover:bg-primary-foreground hover:text-primary transition-colors duration-300">
-              Contact Us
-            </button>
+            <Dialog>
+              <DialogTrigger asChild>
+                <button className="border border-primary-foreground text-primary-foreground px-6 py-3 rounded-md font-semibold hover:bg-primary-foreground hover:text-primary transition-colors duration-300">
+                  Contact Us
+                </button>
+              </DialogTrigger>
+              <DialogContent>
+                <DialogHeader>
+                  <DialogTitle>Contact Us</DialogTitle>
+                  <DialogDescription>
+                    <div className="flex flex-col items-center gap-4 mt-4">
+                      <div className="flex items-center gap-2 text-lg">
+                        <Phone className="h-5 w-5 text-primary" />
+                        <span>+91 99675 51104</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-lg">
+                        <Mail className="h-5 w-5 text-primary" />
+                        <span>support@gardenessence.co.in</span>
+                      </div>
+                    </div>
+                  </DialogDescription>
+                </DialogHeader>
+              </DialogContent>
+            </Dialog>
           </div>
         </div>
       </div>

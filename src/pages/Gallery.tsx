@@ -1,6 +1,14 @@
 import Navbar from "@/components/Navbar";
 import { Card, CardContent } from "@/components/ui/card";
-import { Play, Users, Award, Sprout } from "lucide-react";
+import { Play, Users, Award, Sprout, Phone, Mail } from "lucide-react";
+import {
+  Dialog,
+  DialogTrigger,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+} from "@/components/ui/dialog";
 import { galleryImages, videos } from "@/data/galleryData";
 
 const Gallery = () => {
@@ -15,8 +23,7 @@ const Gallery = () => {
             Garden Essence Gallery
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Discover the power of our hydroponic nutrients through videos,
-            testimonials, and success stories from growers around the world.
+            Discover the power of our hydroponic nutrients through videos and pictures of our own home grown plants using these Garden Essence™ nutrients.
           </p>
         </div>
 
@@ -88,7 +95,7 @@ const Gallery = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-nature opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
 
-   {/*                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  {/*                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <p className="text-white text-sm font-medium">
                       {image.alt}
                     </p>
@@ -103,17 +110,36 @@ const Gallery = () => {
         <div className="bg-gradient-nature rounded-lg p-8 md:p-12 text-center text-primary-foreground shadow-forest">
           <h2 className="text-3xl font-bold mb-4">Ready to Start Growing?</h2>
           <p className="text-lg opacity-95 mb-8 max-w-2xl mx-auto">
-            Join thousands of successful growers who have transformed their
-            gardens with our premium hydroponic nutrients. Your plants deserve
-            the best.
+            Give your plants the nutrients they deserve with Garden Essence.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
             <button className="bg-primary-foreground text-primary px-6 py-3 rounded-md font-semibold hover:scale-105 transition-transform duration-300 shadow-earth">
               Shop Products
             </button>
-            <button className="border border-primary-foreground text-primary-foreground px-6 py-3 rounded-md font-semibold hover:bg-primary-foreground hover:text-primary transition-colors duration-300">
-              Contact Us
-            </button>
+            <Dialog>
+              <DialogTrigger asChild>
+                <button className="border border-primary-foreground text-primary-foreground px-6 py-3 rounded-md font-semibold hover:bg-primary-foreground hover:text-primary transition-colors duration-300">
+                  Contact Us
+                </button>
+              </DialogTrigger>
+              <DialogContent>
+                <DialogHeader>
+                  <DialogTitle>Contact Us</DialogTitle>
+                  <DialogDescription>
+                    <div className="flex flex-col items-center gap-4 mt-4">
+                      <div className="flex items-center gap-2 text-lg">
+                        <Phone className="h-5 w-5 text-primary" />
+                        <span>+91 99675 51104</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-lg">
+                        <Mail className="h-5 w-5 text-primary" />
+                        <span>support@gardenessence.co.in</span>
+                      </div>
+                    </div>
+                  </DialogDescription>
+                </DialogHeader>
+              </DialogContent>
+            </Dialog>
           </div>
         </div>
       </div>

@@ -22,7 +22,11 @@ import {
 } from "lucide-react";
 import leafyGreenImg from "../../public/images/product/leafy-green.jpg";
 
+import { useEffect } from "react";
 const Substance1 = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
   const features = [
     "Makes 250 litres of working nutrient solution",
     "Includes 2 bottles – makes 2.5L stock solution (1.25L each A & B)",

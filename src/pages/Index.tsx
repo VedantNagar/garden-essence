@@ -1,7 +1,15 @@
 import Navbar from "@/components/Navbar";
 import ProductCard from "@/components/ProductCard";
 import { Button } from "@/components/ui/button";
-import { Leaf, Droplets, Shield } from "lucide-react";
+import { Leaf, Droplets, Shield, Phone, Mail } from "lucide-react";
+import {
+  Dialog,
+  DialogTrigger,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+} from "@/components/ui/dialog";
 import heroImage from "@/assets/hero-hydroponic.jpg";
 import substance1Image from "../../public//images/product/green.jpg";
 import substance2Image from "../../public/images/product/veg.jpg";
@@ -14,7 +22,7 @@ const Index = () => {
         "Our premium nutrient solution designed to maximize vegetative growth and overall plant health.",
       image: substance1Image,
       link: "/substance1",
-/*       features: [
+      /*       features: [
         "Essential macro and micronutrients",
         "Balanced NPK ratio for optimal growth",
         "Enhanced with chelated minerals",
@@ -27,7 +35,7 @@ const Index = () => {
         "Complete Nutrition Package for all Vegetables Crops- Tomatoes, Cucumbers, Melons, Chillies, Bell Peppers, Okra, Floral crops, etc.",
       image: substance2Image,
       link: "/substance2",
-/*       features: [
+      /*       features: [
         "Advanced root development complex",
         "Natural growth hormones",
         "Mycorrhizal fungi blend",
@@ -54,6 +62,7 @@ const Index = () => {
     },
   ];
 
+  // Modal state is handled by Dialog component
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
@@ -154,8 +163,7 @@ const Index = () => {
             Ready to Transform Your Garden?
           </h2>
           <p className="text-lg opacity-95 mb-8 max-w-2xl mx-auto">
-            Join thousands of growers who have already discovered the power of
-            Garden Essence nutrients. Your plants deserve the best.
+            Give your plants the nutrients they deserve with Garden Essence.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
@@ -165,13 +173,34 @@ const Index = () => {
             >
               Shop Now
             </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="bg-primary-foreground text-primary hover:scale-105 transition-transform duration-300 shadow-earth"
-            >
-              Contact Us
-            </Button>
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="bg-primary-foreground text-primary hover:scale-105 transition-transform duration-300 shadow-earth"
+                >
+                  Contact Us
+                </Button>
+              </DialogTrigger>
+              <DialogContent>
+                <DialogHeader>
+                  <DialogTitle>Contact Us</DialogTitle>
+                  <DialogDescription>
+                    <div className="flex flex-col items-center gap-4 mt-4">
+                      <div className="flex items-center gap-2 text-lg">
+                        <Phone className="h-5 w-5 text-primary" />
+                        <span>+91 99675 51104</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-lg">
+                        <Mail className="h-5 w-5 text-primary" />
+                        <span>support@gardenessence.co.in</span>
+                      </div>
+                    </div>
+                  </DialogDescription>
+                </DialogHeader>
+              </DialogContent>
+            </Dialog>
           </div>
         </div>
       </section>

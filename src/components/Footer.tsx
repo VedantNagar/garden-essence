@@ -24,9 +24,9 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4" />
-                <span>+91-9967551104</span>
+                <span>+91 99675 51104</span>
               </div>
-{/*               <div className="flex items-center gap-2">
+              {/* <div className="flex items-center gap-2">
                 <MapPin className="h-4 w-4" />
                 <span>123 Garden St, Green Valley, CA 90210</span>
               </div> */}

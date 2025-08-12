@@ -22,7 +22,11 @@ import {
 } from "lucide-react";
 import veggiesImg from "../../public/images/product/veggies.jpg";
 
+import { useEffect } from "react";
 const Substance2 = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
   const features = [
     "Makes 200 litres of working nutrient solution",
     "Two bottles make 2L stock (1L each of A & B)",
