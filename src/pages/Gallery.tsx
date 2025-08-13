@@ -23,12 +23,14 @@ const Gallery = () => {
             Garden Essence Gallery
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Discover the power of our hydroponic nutrients through videos and pictures of our own home grown plants using these Garden Essence™ nutrients.
+            Discover the power of our hydroponic nutrients through videos and
+            pictures of our <strong>own home grown plants</strong> using these
+            Garden Essence™ nutrients.
           </p>
         </div>
 
         {/* Educational Videos */}
-{/*         <div className="mb-16">
+        {/*         <div className="mb-16">
           <h2 className="text-3xl font-bold text-center text-foreground mb-12">
             Educational Videos
           </h2>
@@ -113,7 +115,7 @@ const Gallery = () => {
             Give your plants the nutrients they deserve with Garden Essence.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
-            <button className="bg-primary-foreground text-primary px-6 py-3 rounded-md font-semibold hover:scale-105 transition-transform duration-300 shadow-earth">
+            <button className="border border-primary-foreground text-primary-foreground px-6 py-3 rounded-md font-semibold hover:bg-primary-foreground hover:text-primary transition-colors duration-300">
               Shop Products
             </button>
             <Dialog>

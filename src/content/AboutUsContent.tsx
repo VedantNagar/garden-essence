@@ -41,6 +41,6 @@ export const heroContent = {
 export const storeContent = {
   title: "How to Store Hydroponic Nutrients",
   paragraphs:[
-    "Store the GARDEN ESSENCE™ PREMIUM HYDROPONICS NUTRIENTS Stock Solution A &amp; B in a cool, dry place and away from direct sunlight. Always wash hands thoroughly with soap after handling the stock solution or the final nutrient solution. Keep out of reach of children and pets. Use as directed. Avoid contact with skin and eyes. If ingested, seek medical help immediately.",
+    "Store the GARDEN ESSENCE™ PREMIUM HYDROPONICS NUTRIENTS Stock Solution A & B in a cool, dry place and away from direct sunlight. Always wash hands thoroughly with soap after handling the stock solution or the final nutrient solution. Keep out of reach of children and pets. Use as directed. Avoid contact with skin and eyes. If ingested, seek medical help immediately.",
   ]
 };

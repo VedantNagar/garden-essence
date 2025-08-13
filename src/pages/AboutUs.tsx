@@ -170,7 +170,7 @@ const AboutUs = () => {
             garden.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
-            <button className="bg-primary-foreground text-primary px-6 py-3 rounded-md font-semibold hover:scale-105 transition-transform duration-300 shadow-earth">
+            <button className="border border-primary-foreground text-primary-foreground px-6 py-3 rounded-md font-semibold hover:bg-primary-foreground hover:text-primary transition-colors duration-300">
               Shop Products
             </button>
             <Dialog>
