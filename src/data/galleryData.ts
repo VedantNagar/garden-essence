@@ -49,8 +49,9 @@ export const videos: VideoData[] = [
   {
     id: "1",
     title: "Leafy Greens-250",
-    description: "Results of the leafy greens-250 nutrients. These are our home grown plants.",
-    thumbnail: "/videos/video1.mp4", // Not used, but kept for compatibility
+    description:
+      "Results of the leafy greens-250 nutrients. These are our home grown plants.",
+    thumbnail: "/images/gallery/image26.jpg",
     duration: "--",
     category: "Local Video",
     src: "/videos/video1.mp4",
@@ -58,8 +59,9 @@ export const videos: VideoData[] = [
   {
     id: "2",
     title: "Veggies-200",
-    description: "Results of the veggies-200 nutrients. These are our home grown plants.",
-    thumbnail: "/videos/video2.mp4",
+    description:
+      "Results of the veggies-200 nutrients. These are our home grown plants.",
+    thumbnail: "/images/gallery/image13.jpg",
     duration: "--",
     category: "Local Video",
     src: "/videos/video2.mp4",
