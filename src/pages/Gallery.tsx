@@ -30,48 +30,44 @@ const Gallery = () => {
         </div>
 
         {/* Educational Videos */}
-        {/*         <div className="mb-16">
+        <div className="mb-16">
           <h2 className="text-3xl font-bold text-center text-foreground mb-12">
             Educational Videos
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {videos.map((video) => (
-              <Card
-                key={video.id}
-                className="group hover:shadow-forest transition-all duration-300 hover:-translate-y-2 overflow-hidden"
-              >
-                <div className="relative">
-                  <div className="aspect-video bg-gradient-to-br from-muted to-card relative overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-nature opacity-20"></div>
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="bg-primary/90 rounded-full p-4 group-hover:scale-110 transition-transform duration-300 shadow-glow">
-                        <Play className="h-8 w-8 text-primary-foreground fill-current" />
-                      </div>
-                    </div>
-                    <div className="absolute top-4 left-4">
-                      <span className="bg-background/90 text-foreground px-2 py-1 rounded text-xs font-medium">
-                        {video.category}
-                      </span>
-                    </div>
-                    <div className="absolute bottom-4 right-4">
-                      <span className="bg-background/90 text-foreground px-2 py-1 rounded text-xs font-medium">
-                        {video.duration}
-                      </span>
-                    </div>
+          <div className="flex flex-col md:flex-row gap-10 justify-center items-center">
+            {videos
+              .filter((v) => v.src)
+              .map((video) => (
+                <Card
+                  key={video.id}
+                  className="group hover:shadow-forest transition-all duration-300 hover:-translate-y-2 overflow-hidden w-full max-w-xl"
+                >
+                  <div
+                    className="relative w-full"
+                    style={{ aspectRatio: "16/9" }}
+                  >
+                    <video
+                      src={video.src}
+                      controls
+                      className="w-full h-[400px] object-cover rounded-lg"
+                      poster={video.thumbnail}
+                    >
+                      Your browser does not support the video tag.
+                    </video>
+                    <div className="absolute top-4 left-4"></div>
                   </div>
-                </div>
-                <CardContent className="p-6">
-                  <h3 className="text-lg font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
-                    {video.title}
-                  </h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    {video.description}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
+                  <CardContent className="p-6">
+                    <h3 className="text-xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
+                      {video.title}
+                    </h3>
+                    <p className="text-base text-muted-foreground leading-relaxed">
+                      {video.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              ))}
           </div>
-        </div> */}
+        </div>
 
         {/* My Garden Gallery - Aligned Grid */}
         <div className="mb-16">

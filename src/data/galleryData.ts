@@ -42,34 +42,26 @@ export interface VideoData {
   thumbnail: string;
   duration: string;
   category: string;
+  src?: string; // Optional: path to local video file
 }
 
 export const videos: VideoData[] = [
   {
     id: "1",
-    title: "Complete Hydroponic Setup Guide",
-    description:
-      "Learn how to set up your first hydroponic system from scratch using our premium nutrients.",
-    thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
-    duration: "15:30",
-    category: "Tutorial",
+    title: "Leafy Greens-250",
+    description: "Results of the leafy greens-250 nutrients. These are our home grown plants.",
+    thumbnail: "/videos/video1.mp4", // Not used, but kept for compatibility
+    duration: "--",
+    category: "Local Video",
+    src: "/videos/video1.mp4",
   },
   {
     id: "2",
-    title: "Leafy Greens - 250 vs Traditional Nutrients",
-    description:
-      "See the amazing results when comparing our Leafy Greens - 250 with traditional growing methods.",
-    thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
-    duration: "8:45",
-    category: "Comparison",
-  },
-  {
-    id: "3",
-    title: "Veggies – 200 Success Stories",
-    description:
-      "Real customers share their incredible results using our Advanced Veggies – 200 formula.",
-    thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
-    duration: "12:15",
-    category: "Testimonials",
+    title: "Veggies-200",
+    description: "Results of the veggies-200 nutrients. These are our home grown plants.",
+    thumbnail: "/videos/video2.mp4",
+    duration: "--",
+    category: "Local Video",
+    src: "/videos/video2.mp4",
   },
 ];
