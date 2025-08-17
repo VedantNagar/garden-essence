@@ -64,7 +64,7 @@ const Substance2 = () => {
     { label: "Net Weight", value: "240 gms" },
     { label: "Stock Solution", value: "2L (1L A + 1L B)" },
     { label: "Dilution", value: "Makes up to 200L nutrient solution" },
-    { label: "Shelf Life", value: "3 years" },
+    { label: "Shelf Life", value: "2 years" },
   ];
 
   const detailedInfo = {

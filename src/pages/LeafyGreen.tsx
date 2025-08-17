@@ -60,7 +60,7 @@ const Substance1 = () => {
     { label: "Net Weight", value: "300 gms" },
     { label: "Stock Solution", value: "2.5L (1.25L A + 1.25L B)" },
     { label: "Dilution", value: "Makes up to 250L nutrient solution" },
-    { label: "Shelf Life", value: "3 years" },
+    { label: "Shelf Life", value: "2 years" },
   ];
 
   const detailedInfo = {
@@ -352,7 +352,7 @@ const Substance1 = () => {
               </p>
               <p>
                 Designed for home growers and professionals alike, the dry mix
-                has a long shelf life of 3 years and offers consistent
+                has a long shelf life of 2 years and offers consistent
                 performance in diverse growing conditions.
               </p>
             </CardContent>

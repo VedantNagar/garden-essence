@@ -131,9 +131,8 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-border mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-muted-foreground">
           <p>© 2025 Garden Essence. All rights reserved.</p>
-          <p className="mt-2 md:mt-0">
-            Made with <span className="text-primary">♥</span> for growers
-            worldwide
+          <p className="mt-2 font-bold">
+            Mfd. by HYDROBOOST, New Delhi, India
           </p>
         </div>
       </div>
