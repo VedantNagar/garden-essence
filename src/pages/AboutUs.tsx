@@ -170,9 +170,38 @@ const AboutUs = () => {
             garden.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
-            <button className="border border-primary-foreground text-primary-foreground px-6 py-3 rounded-md font-semibold hover:bg-primary-foreground hover:text-primary transition-colors duration-300">
-              Shop Products
-            </button>
+            <Dialog>
+              <DialogTrigger asChild>
+                <button className="border border-primary-foreground text-primary-foreground px-6 py-3 rounded-md font-semibold hover:bg-primary-foreground hover:text-primary transition-colors duration-300">
+                  For Order
+                </button>
+              </DialogTrigger>
+              <DialogContent>
+                <DialogHeader>
+                  <DialogTitle>Order & Bulk Purchase</DialogTitle>
+                  <DialogDescription>
+                    <div className="flex flex-col items-center gap-4 mt-4">
+                      <div className="flex items-center gap-2 text-lg">
+                        <Phone className="h-5 w-5 text-primary" />
+                        <span>+91 99675 51104</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-lg">
+                        <Mail className="h-5 w-5 text-primary" />
+                        <span>support@gardenessence.co.in</span>
+                      </div>
+                      <div className="text-center text-base font-semibold text-primary mt-4">
+                        BULK PURCHASE OPTIONS AVAILABLE.
+                        <br />
+                        PLEASE CONTACT AT:-{" "}
+                        <span className="underline">
+                          support@gardenessence.co.in
+                        </span>
+                      </div>
+                    </div>
+                  </DialogDescription>
+                </DialogHeader>
+              </DialogContent>
+            </Dialog>
             <Dialog>
               <DialogTrigger asChild>
                 <button className="border border-primary-foreground text-primary-foreground px-6 py-3 rounded-md font-semibold hover:bg-primary-foreground hover:text-primary transition-colors duration-300">

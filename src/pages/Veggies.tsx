@@ -140,7 +140,7 @@ const Substance2 = () => {
               ))}
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+{/*             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="earth" size="lg" className="flex-1">
                 Order Now
               </Button>
@@ -159,7 +159,7 @@ const Substance2 = () => {
                   </DialogHeader>
 
                   <div className="space-y-6">
-                    {/* Composition Section */}
+          
                     <div className="space-y-3">
                       <div className="flex items-center space-x-2">
                         <Beaker className="h-5 w-5 text-accent" />
@@ -182,7 +182,7 @@ const Substance2 = () => {
                       </ul>
                     </div>
 
-                    {/* Usage Instructions */}
+
                     <div className="space-y-3">
                       <div className="flex items-center space-x-2">
                         <Target className="h-5 w-5 text-accent" />
@@ -205,7 +205,7 @@ const Substance2 = () => {
                       </ul>
                     </div>
 
-                    {/* Applications */}
+       
                     <div className="space-y-3">
                       <div className="flex items-center space-x-2">
                         <Droplets className="h-5 w-5 text-accent" />
@@ -228,7 +228,7 @@ const Substance2 = () => {
                       </ul>
                     </div>
 
-                    {/* Suitable Crops */}
+  
                     <div className="space-y-3">
                       <div className="flex items-center space-x-2">
                         <Leaf className="h-5 w-5 text-accent" />
@@ -251,7 +251,7 @@ const Substance2 = () => {
                       </ul>
                     </div>
 
-                    {/* Call to Action */}
+                
                     <div className="bg-gradient-earth rounded-lg p-6 text-center text-primary-foreground mt-6">
                       <h4 className="text-lg font-semibold mb-2">
                         Perfect for Your Vegetable Garden
@@ -270,7 +270,7 @@ const Substance2 = () => {
                   </div>
                 </DialogContent>
               </Dialog>
-            </div>
+            </div> */}
           </div>
 
           <div className="relative">

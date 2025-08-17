@@ -131,7 +131,7 @@ const Substance1 = () => {
                 </div>
               ))}
             </div>
-
+{/* 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="nature" size="lg" className="flex-1">
                 Order Now
@@ -151,7 +151,7 @@ const Substance1 = () => {
                   </DialogHeader>
 
                   <div className="space-y-6">
-                    {/* Composition Section */}
+                  
                     <div className="space-y-3">
                       <div className="flex items-center space-x-2">
                         <Beaker className="h-5 w-5 text-accent" />
@@ -174,7 +174,7 @@ const Substance1 = () => {
                       </ul>
                     </div>
 
-                    {/* Usage Instructions */}
+                
                     <div className="space-y-3">
                       <div className="flex items-center space-x-2">
                         <Target className="h-5 w-5 text-accent" />
@@ -197,7 +197,7 @@ const Substance1 = () => {
                       </ul>
                     </div>
 
-                    {/* Applications */}
+               
                     <div className="space-y-3">
                       <div className="flex items-center space-x-2">
                         <Droplets className="h-5 w-5 text-accent" />
@@ -220,7 +220,7 @@ const Substance1 = () => {
                       </ul>
                     </div>
 
-                    {/* Suitable Crops */}
+                
                     <div className="space-y-3">
                       <div className="flex items-center space-x-2">
                         <Leaf className="h-5 w-5 text-accent" />
@@ -243,7 +243,7 @@ const Substance1 = () => {
                       </ul>
                     </div>
 
-                    {/* Call to Action */}
+              
                     <div className="bg-gradient-nature rounded-lg p-6 text-center text-primary-foreground mt-6">
                       <h4 className="text-lg font-semibold mb-2">
                         Ready to Start Growing?
@@ -262,7 +262,7 @@ const Substance1 = () => {
                   </div>
                 </DialogContent>
               </Dialog>
-            </div>
+            </div> */}
           </div>
 
           <div className="relative">

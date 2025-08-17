@@ -151,9 +151,9 @@ const Index = () => {
             plants.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="nature" size="lg" className="text-lg px-8 py-6">
+{/*             <Button variant="nature" size="lg" className="text-lg px-8 py-6">
               Explore Products
-            </Button>
+            </Button> */}
             <Button
               variant="outline"
               size="lg"
