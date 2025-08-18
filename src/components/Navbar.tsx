@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { Leaf, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 
@@ -23,8 +23,12 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 group">
-            <div className="p-2 bg-gradient-leaf rounded-full shadow-forest group-hover:shadow-glow transition-all duration-300">
-              <Leaf className="h-6 w-6 text-primary-foreground" />
+            <div>
+              <img
+                src="/images/logo/GARDEN%20ESSENCE%20Logo.jpeg"
+                alt="Garden Essence Logo"
+                className="h-8 w-8 object-contain rounded-full"
+              />
             </div>
             <span className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
               Garden Essence
