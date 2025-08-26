@@ -17,7 +17,7 @@ import {
   DialogDescription,
 } from "@/components/ui/dialog";
 import heroImage from "@/assets/hero-hydroponic.jpg";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import substance1Image from "../../public/images/product/green.jpg";
 import substance2Image from "../../public/images/product/veg.jpg";
 
@@ -124,6 +124,9 @@ const Index = () => {
   const handleLearnMoreClick = () => {
     faqRef.current?.scrollIntoView({ behavior: "smooth" });
   };
+  useEffect(()=>{
+    window.scrollTo({top:0,left:0,behavior:"smooth"});
+  },[]);
 
   return (
     <div className="min-h-screen bg-background">
@@ -141,19 +144,17 @@ const Index = () => {
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6">
             Grow Beyond
-            <span className="block bg-gradient-nature bg-clip-text text-transparent">
+            <span className="block text-primary relative mt-2">
               Nature's Limits
+              <span className="block w-16 h-1 bg-primary/60 rounded-full mx-auto mt-2" aria-hidden="true"></span>
             </span>
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed font-semibold">
             Premium hydroponic nutrients that unlock your plants' full
             potential. Experience faster growth, higher yields, and healthier
             plants.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-{/*             <Button variant="nature" size="lg" className="text-lg px-8 py-6">
-              Explore Products
-            </Button> */}
             <Button
               variant="outline"
               size="lg"

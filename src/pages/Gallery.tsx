@@ -11,7 +11,11 @@ import {
 } from "@/components/ui/dialog";
 import { galleryImages, videos } from "@/data/galleryData";
 
+import { useEffect } from "react";
 const Gallery = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
