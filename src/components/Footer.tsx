@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Sprout, Mail, Phone, MapPin } from "lucide-react";
+import { Sprout, Mail, Phone, MapPin, Instagram, Youtube, Facebook } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -30,6 +30,42 @@ const Footer = () => {
                 <MapPin className="h-4 w-4" />
                 <span>123 Garden St, Green Valley, CA 90210</span>
               </div> */}
+            </div>
+            {/* Social Icons */}
+            <div className="flex gap-3 mt-6 items-center">
+              <a
+                href="https://www.instagram.com/gardenessence_india?igsh=bGY0MnU3bGVneW1h"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="group"
+              >
+                <span className="inline-flex items-center justify-center w-8 h-8 rounded-md bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] transition-all duration-200 group-hover:scale-105 shadow-md">
+                  <Instagram className="h-5 w-5 text-white group-hover:text-white" />
+                </span>
+              </a>
+              <a
+                href="https://youtube.com/@garden_essence?si=kszZA3cUnQcpxQMw"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+                className="group"
+              >
+                <span className="inline-flex items-center justify-center w-8 h-8 rounded-md bg-[#FF0000] transition-all duration-200 group-hover:scale-105 shadow-md">
+                  <Youtube className="h-5 w-5 text-white group-hover:text-white" />
+                </span>
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61577597726626"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className="group"
+              >
+                <span className="inline-flex items-center justify-center w-8 h-8 rounded-md bg-[#1877F3] transition-all duration-200 group-hover:scale-105 shadow-md">
+                  <Facebook className="h-5 w-5 text-white group-hover:text-white" />
+                </span>
+              </a>
             </div>
           </div>
 
